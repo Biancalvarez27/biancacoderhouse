@@ -4,6 +4,7 @@
 
 
 /*grid index*/
+<<<<<<< HEAD
 .contenedor1
  { display: grid;
 	grid-template-columns: 99%;
@@ -17,6 +18,15 @@
 	 "footer";}
 	#body_header { grid-area: header;}
 	.header_nav { grid-area: nav;}
+=======
+.contenedor1 { display: grid;
+	grid-template-columns: 99%;
+	grid-template-rows: 300px 450px 100px;
+	grid-auto-flow: row;
+	grid-auto-columns: 99%; 
+	grid-template-areas:"header" "main" "footer";}
+	.body_header { grid-area: header;}
+>>>>>>> c05de85a90b7fe737fe10a51e64d6248b605011a
 	.body_main {grid-area: main;}
 	.body_footer {grid-area: footer;
 	height: 100%;

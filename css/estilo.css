@@ -1,0 +1,143 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*grid*/
+.contenedor1 { display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 300px 450px 100px;
+	grid-auto-flow: row;
+	grid-auto-columns: 1fr; 
+	grid-template-areas:"header" "main" "footer";}
+	#body_header { grid-area: header;}
+	.body_main {grid-area: main;}
+	.body_footer {grid-area: footer;
+	height: 100%;
+	width: 100%; 
+grid-gap:0;}
+
+/*heater */
+
+.div_header
+		{margin-bottom: 300px;
+		margin-right: 5rem;
+		}
+.logo_header img{ border-radius: 150px;
+	margin-top: 5rem;
+margin-right: 1rem; } 
+
+.logo_header  
+		{float: right; } 
+.titulo_header h1 {
+ 		float:left;
+		font-family: imaginaryfriend-bb, sans-serif;
+		font-weight: 700;
+		font-style: normal;
+		font-size: 60px }
+.article_parrafo 
+{ margin-bottom: 1rem;
+	display: flex;
+	justify-content: space-between;
+margin-bottom: 2rem;
+margin-right: 1rem;}
+.div__menu 
+		{display: flex;
+			justify-content: space-around;
+			font-family: imaginaryfriend-bb, sans-serif; 
+		width: auto; }
+.div__menu a
+		{text-decoration: none;color: 	black;				
+			font-size: 30px; }
+			
+
+/*menus despegables animacion*/
+.table__flex
+			{display: flex; justify-content: center;}
+.div_subtitulo
+				{display: flex;
+				justify-content: center;}
+.div_textarea
+			{display: flex;
+			justify-content: center;}
+.div__imput_enviar_borrar
+			{display: flex; justify-content: center;
+			margin-top: 10px;}
+.div_titulos {display: flex;
+justify-content: center;}
+.article_parrafo
+			{display: flex; justify-content: center; align-content: center;
+			margin-right: 50px; margin-left: 50px}
+.div_imgperros 
+			{display: flex; justify-content: center; align-content: center;}
+
+.perrito {display: flex;
+			flex-direction: row;
+			text-align: end;
+			margin-top: 10rem;
+			margin-bottom: 0rem;
+			justify-content: flex-end; 
+			}
+			.perrito img 
+			{ height: 15rem;
+			padding-right: 5rem;
+			margin-bottom: 0rem;}
+/*footer animacion*/
+.body_footer div {display: flex;
+justify-content: flex-end;
+padding-right: 3rem	;}
+
+
+.contenedor1  	
+			{width: 100%;
+				height:100%; background: linear-gradient(white,white, black)} 
+
+/* MEDIA QUERYS TABLET*/
+
+	@media (max-width: 700px) { 
+				.contenedor1 { display: grid;
+				grid-template-columns: 1fr;
+				grid-template-rows: 150px 300px 50px;
+				grid-auto-flow: row;
+				grid-auto-columns: 1fr; 
+				grid-template-areas:"header" "main" "footer";}
+				.body_header { grid-area: header;}
+				.body_main {grid-area: main;}
+				.body_footer {grid-area: footer;
+				height: 100%;
+				width: 100%; 
+			grid-gap:0;}
+            
+			.perrito {display: flex;
+				flex-direction: row;
+				text-align: center;
+				margin-top: 10rem;
+				margin-bottom: 0rem;
+				justify-content: center; 
+				}
+				.perrito img 
+				{ height: 10rem;
+				padding-right: 0rem;
+				margin-bottom: 0rem;}
+				#body_header { display: flex;
+					flex-direction: column;
+					 }
+				.div_header{ margin-bottom: 5rem;					
+			 margin-bottom: 2rem;}
+			 .titulo_header h1 {
+			   font-family: imaginaryfriend-bb, sans-serif;
+			   font-weight: 300px;
+			   font-style: normal;
+			   font-size: 30px }
+			   .logo_header img{ height: 100px;
+				    border-radius: 150px;
+				margin-top: 0rem;
+			margin-right: 0px; } 
+			.div__menu 
+		{display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			font-family: imaginaryfriend-bb, sans-serif; 
+		 }
+		 .div__menu a { font-weight: 30px;font-size: 18px;}
+			
+			 }

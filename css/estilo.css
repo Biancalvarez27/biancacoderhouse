@@ -82,7 +82,7 @@ justify-content: center;}
 .perrito {display: flex;
 			flex-direction: row;
 			text-align: end;
-			margin-top: 10rem;
+			margin-top: 2rem;
 			margin-bottom: 0rem;
 			justify-content: flex-end; 
 			}
